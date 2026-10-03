@@ -1,0 +1,2001 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Modern E-Commerce Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                ShopEase
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+
+                <button class="icon-btn" id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="icon-btn wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <button class="icon-btn cart-btn" id="cartBtn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount">0</span>
+                </button>
+<button class="icon-btn" id="logoutBtn" title="Logout">
+    <i class="fa-solid fa-right-from-bracket"></i>
+</button>
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </nav>
+
+        <!-- Search Box -->
+
+        <div class="search-container" id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button id="searchClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    NEW COLLECTION 2026
+                </span>
+
+                <h1>
+                    Shop Smart.<br>
+                    Live <span>Better.</span>
+                </h1>
+
+                <p>
+                    Discover stylish products, great deals and everything
+                    you need in one place.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="primary-btn">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#categories" class="secondary-btn">
+                        Explore Categories
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="hero-circle"></div>
+
+                <div class="floating-card card-one">
+                    <i class="fa-solid fa-truck"></i>
+                    <div>
+                        <strong>Free Delivery</strong>
+                        <small>On selected orders</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-two">
+                    <i class="fa-solid fa-star"></i>
+                    <div>
+                        <strong>Top Rated</strong>
+                        <small>Quality products</small>
+                    </div>
+                </div>
+
+                <div class="hero-shopping-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features">
+
+            <div class="feature">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick & reliable delivery</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h3>Secure Payment</h3>
+                    <p>Safe & secure checkout</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-rotate-left"></i>
+                <div>
+                    <h3>Easy Returns</h3>
+                    <p>Simple return process</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                    <h3>24/7 Support</h3>
+                    <p>We're here to help</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="section" id="categories">
+
+            <div class="section-heading">
+
+                <div>
+                    <span>SHOP BY CATEGORY</span>
+                    <h2>Explore Categories</h2>
+                </div>
+
+                <p>
+                    Find everything you need from our popular categories.
+                </p>
+
+            </div>
+
+            <div class="category-grid">
+
+                <div class="category-card" data-category="fashion">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h3>Fashion</h3>
+                    <p>120+ Products</p>
+                </div>
+
+                <div class="category-card" data-category="electronics">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>Electronics</h3>
+                    <p>85+ Products</p>
+                </div>
+
+                <div class="category-card" data-category="home">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <h3>Home & Living</h3>
+                    <p>95+ Products</p>
+                </div>
+
+                <div class="category-card" data-category="sports">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3>Sports</h3>
+                    <p>60+ Products</p>
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section products-section" id="products">
+
+    <!-- Main Products Heading -->
+    <div class="section-heading">
+
+        <div>
+            <span>OUR PRODUCTS</span>
+            <h2>Featured Products</h2>
+        </div>
+
+        <button class="view-all" id="viewAllBtn">
+            View All
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+    <!-- ================= FASHION ================= -->
+
+    <div class="product-category-section">
+
+        <div class="category-products-heading">
+            <div>
+                <span>FASHION COLLECTION</span>
+                <h2>Fashion</h2>
+            </div>
+
+            <p>Discover stylish clothing for every occasion.</p>
+        </div>
+
+
+        <div class="product-grid" id="productGrid">
+
+            <!-- Fashion Product 1 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-20%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
+                         alt="Premium White T-Shirt">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Men's Fashion</span>
+                    <h3>Premium White T-Shirt</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(48)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$29.99</span>
+                            <strong>$23.99</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Premium White T-Shirt"
+                                data-price="23.99">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 2 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-15%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=600&q=80"
+                         alt="Casual Cotton Shirt">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Men's Fashion</span>
+                    <h3>Casual Cotton Shirt</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(36)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$44.99</span>
+                            <strong>$38.24</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Casual Cotton Shirt"
+                                data-price="38.24">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 3 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-25%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80"
+                         alt="Classic Blue Jeans">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Men's Fashion</span>
+                    <h3>Classic Blue Jeans</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(76)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$69.99</span>
+                            <strong>$52.49</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Classic Blue Jeans"
+                                data-price="52.49">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 4 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-18%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80"
+                         alt="Comfort Hoodie">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Men's Fashion</span>
+                    <h3>Comfort Hoodie</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(42)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$64.99</span>
+                            <strong>$53.29</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Comfort Hoodie"
+                                data-price="53.29">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 5 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-20%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=600&q=80"
+                         alt="Classic Denim Jacket">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Women's Fashion</span>
+                    <h3>Classic Denim Jacket</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(51)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$79.99</span>
+                            <strong>$63.99</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Classic Denim Jacket"
+                                data-price="63.99">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 6 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-30%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=600&q=80"
+                         alt="Elegant Summer Dress">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Women's Fashion</span>
+                    <h3>Elegant Summer Dress</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(64)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$89.99</span>
+                            <strong>$62.99</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Elegant Summer Dress"
+                                data-price="62.99">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 7 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-15%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80"
+                         alt="Casual Fashion Outfit">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Women's Fashion</span>
+                    <h3>Casual Fashion Outfit</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(39)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$74.99</span>
+                            <strong>$63.74</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Casual Fashion Outfit"
+                                data-price="63.74">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 8 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-22%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=600&q=80"
+                         alt="Classic T-Shirt">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Men's Fashion</span>
+                    <h3>Classic T-Shirt</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(58)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$34.99</span>
+                            <strong>$27.29</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Classic T-Shirt"
+                                data-price="27.29">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 9 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-17%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=600&q=80"
+                         alt="Premium Formal Shirt">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">women's Fashion</span>
+                    <h3>Premium Face mask</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(31)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$54.99</span>
+                            <strong>$45.64</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Premium Formal Shirt"
+                                data-price="45.64">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 10 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-25%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80"
+                         alt="Stylish Casual Top">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Women's Fashion</span>
+                    <h3>Stylish Casual Top</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(73)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$49.99</span>
+                            <strong>$37.49</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Stylish Casual Top"
+                                data-price="37.49">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 11 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-20%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=600&q=80"
+                         alt="Premium Winter Jacket">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Winter Wear</span>
+                    <h3>Premium Winter Jacket</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(46)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$119.99</span>
+                            <strong>$95.99</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Premium Winter Jacket"
+                                data-price="95.99">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Fashion Product 12 -->
+            <article class="product-card" data-category="fashion">
+
+                <div class="product-image">
+                    <span class="discount">-18%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=600&q=80"
+                         alt="Elegant Fashion Coat">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Women's Fashion</span>
+                    <h3>Elegant Fashion Coat</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(35)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$109.99</span>
+                            <strong>$90.19</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Elegant Fashion Coat"
+                                data-price="90.19">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= ELECTRONICS ================= -->
+
+    <div class="product-category-section">
+
+        <div class="category-products-heading">
+            <div>
+                <span>TECH COLLECTION</span>
+                <h2>Electronics</h2>
+            </div>
+
+            <p>Smart technology and useful gadgets for everyday life.</p>
+        </div>
+
+
+        <div class="product-grid" id="electronicsGrid">
+
+            <!-- Electronics 1 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+                         alt="Wireless Headphones">
+
+                    <span class="discount">-20%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Wireless Headphones</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(128)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$62</span>
+                            <strong>$49</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Wireless Headphones"
+                                data-price="49">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+           
+
+            <!-- Electronics 3 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80"
+                         alt="Bluetooth Speaker">
+
+                    <span class="discount">-25%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Bluetooth Speaker</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(84)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$52</span>
+                            <strong>$39</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Bluetooth Speaker"
+                                data-price="39">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Electronics 4 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80"
+                         alt="Wireless Keyboard">
+
+                    <span class="discount">-18%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Wireless Keyboard</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(73)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$55</span>
+                            <strong>$45</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Wireless Keyboard"
+                                data-price="45">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Electronics 5 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80"
+                         alt="Laptop">
+
+                    <span class="discount">-15%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Laptop</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(92)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$799</span>
+                            <strong>$699</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Laptop"
+                                data-price="699">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Electronics 6 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80"
+                         alt="Smartphone">
+
+                    <span class="discount">-10%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Smartphone</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(145)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$449</span>
+                            <strong>$399</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Smartphone"
+                                data-price="399">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Electronics 7 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80"
+                         alt="Digital Camera">
+
+                    <span class="discount">-20%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Digital Camera</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(67)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$375</span>
+                            <strong>$299</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Digital Camera"
+                                data-price="299">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Electronics 8 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=600&q=80"
+                         alt="Wireless Earbuds">
+
+                    <span class="discount">-25%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Wireless Earbuds</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(118)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$79</span>
+                            <strong>$59</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Wireless Earbuds"
+                                data-price="59">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Electronics 9 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80"
+                         alt="Tablet">
+
+                    <span class="discount">-18%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Tablet</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(81)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$299</span>
+                            <strong>$249</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Tablet"
+                                data-price="249">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Electronics 10 -->
+            <article class="product-card electronics-card" data-category="electronics">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=600&q=80"
+                         alt="Gaming Mouse">
+
+                    <span class="discount">-12%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Electronics</span>
+                    <h3>Gaming Mouse</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(104)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$42</span>
+                            <strong>$35</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Gaming Mouse"
+                                data-price="35">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= HOME & LIVING ================= -->
+
+    <div class="product-category-section">
+
+        <div class="category-products-heading">
+            <div>
+                <span>HOME COLLECTION</span>
+                <h2>Home & Living</h2>
+            </div>
+
+            <p>Beautiful products to make your home comfortable.</p>
+        </div>
+
+
+        <div class="product-grid" id="homeGrid">
+
+            <!-- Home 1 -->
+            <article class="product-card" data-category="home">
+
+                <div class="product-image">
+                    <span class="discount">-20%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80"
+                         alt="Modern Sofa">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Home & Living</span>
+                    <h3>Modern Sofa</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(52)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$599</span>
+                            <strong>$479</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Modern Sofa"
+                                data-price="479">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Home 2 -->
+            <article class="product-card" data-category="home">
+
+                <div class="product-image">
+                    <span class="discount">-15%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80"
+                         alt="Modern Table Lamp">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Home & Living</span>
+                    <h3>Modern Table Lamp</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(41)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$59</span>
+                            <strong>$50</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Modern Table Lamp"
+                                data-price="50">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Home 3 -->
+            <article class="product-card" data-category="home">
+
+                <div class="product-image">
+                    <span class="discount">-18%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+                         alt="Modern Accent Chair">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Home & Living</span>
+                    <h3>Modern Accent Chair</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(47)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$249</span>
+                            <strong>$204</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Modern Accent Chair"
+                                data-price="204">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Home 4 -->
+            <article class="product-card" data-category="home">
+
+                <div class="product-image">
+                    <span class="discount">-25%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=600&q=80"
+                         alt="Classic Wall Clock">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Home & Living</span>
+                    <h3>Classic Wall Clock</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(38)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$79</span>
+                            <strong>$59</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Classic Wall Clock"
+                                data-price="59">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Home 5 -->
+            <article class="product-card" data-category="home">
+
+                <div class="product-image">
+                    <span class="discount">-20%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=600&q=80"
+                         alt="Wooden Coffee Table">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Home & Living</span>
+                    <h3>Wooden Coffee Table</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(63)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$299</span>
+                            <strong>$239</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Wooden Coffee Table"
+                                data-price="239">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Home 6 -->
+            <article class="product-card" data-category="home">
+
+                <div class="product-image">
+                    <span class="discount">-15%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=600&q=80"
+                         alt="Decorative Indoor Plant">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Home & Living</span>
+                    <h3>Decorative Indoor Plant</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(45)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$49</span>
+                            <strong>$42</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Decorative Indoor Plant"
+                                data-price="42">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= SPORTS ================= -->
+
+    <div class="product-category-section">
+
+        <div class="category-products-heading">
+            <div>
+                <span>SPORTS COLLECTION</span>
+                <h2>Sports</h2>
+            </div>
+
+            <p>Equipment and accessories for an active lifestyle.</p>
+        </div>
+
+
+        <div class="product-grid" id="sportsGrid">
+
+            <!-- Sports 1 -->
+            <article class="product-card" data-category="sports">
+
+                <div class="product-image">
+                    <span class="discount">-15%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=600&q=80"
+                         alt="Professional Football">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Sports</span>
+                    <h3>Professional Football</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(72)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$39</span>
+                            <strong>$33</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Professional Football"
+                                data-price="33">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Sports 2 -->
+            <article class="product-card" data-category="sports">
+
+                <div class="product-image">
+                    <span class="discount">-20%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80"
+                         alt="Official Basketball">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Sports</span>
+                    <h3>Official Basketball</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(59)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$49</span>
+                            <strong>$39</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Official Basketball"
+                                data-price="39">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Sports 3 -->
+            <article class="product-card" data-category="sports">
+
+                <div class="product-image">
+                    <span class="discount">-18%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=600&q=80"
+                         alt="Tennis Racket">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Sports</span>
+                    <h3>Tennis Racket</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(43)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$129</span>
+                            <strong>$106</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Tennis Racket"
+                                data-price="106">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Sports 4 -->
+            <article class="product-card" data-category="sports">
+
+                <div class="product-image">
+                    <span class="discount">-25%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                         alt="Running Shoes">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Sports</span>
+                    <h3>Running Shoes</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(88)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$119</span>
+                            <strong>$89</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Running Shoes"
+                                data-price="89">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Sports 5 -->
+            <article class="product-card" data-category="sports">
+
+                <div class="product-image">
+                    <span class="discount">-10%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80"
+                         alt="Fitness Dumbbells">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Sports</span>
+                    <h3>Fitness Dumbbells</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(51)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$79</span>
+                            <strong>$71</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Fitness Dumbbells"
+                                data-price="71">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Sports 6 -->
+            <article class="product-card" data-category="sports">
+
+                <div class="product-image">
+                    <span class="discount">-15%</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80"
+                         alt="Sports Water Bottle">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">Sports</span>
+                    <h3>Sports Water Bottle</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(64)</span>
+                    </div>
+
+                    <div class="product-bottom">
+                        <div>
+                            <span class="old-price">$29</span>
+                            <strong>$25</strong>
+                        </div>
+
+                        <button class="add-cart"
+                                data-name="Sports Water Bottle"
+                                data-price="25">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- ================= PROMO ================= -->
+
+        <section class="promo" id="about">
+
+            <div class="promo-content">
+
+                <span>LIMITED TIME OFFER</span>
+
+                <h2>
+                    Upgrade Your<br>
+                    Everyday Style
+                </h2>
+
+                <p>
+                    Get up to 40% off selected products.
+                    Don't miss our latest collection.
+                </p>
+
+                <a href="#products" class="primary-btn">
+                    Shop Deals
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="promo-icon">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEWSLETTER ================= -->
+
+        <section class="newsletter" id="contact">
+
+            <div>
+                <span>STAY UPDATED</span>
+                <h2>Subscribe to our newsletter</h2>
+                <p>Get updates about new products and special offers.</p>
+            </div>
+
+            <form id="newsletterForm">
+
+                <input type="email"
+                       id="emailInput"
+                       placeholder="Enter your email"
+                       required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    ShopEase
+                </a>
+
+                <p>
+                    Your modern destination for quality products,
+                    great prices and a better shopping experience.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About Us</a>
+            </div>
+
+
+            <div>
+                <h3>Customer Care</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+
+            <div>
+                <h3>Contact</h3>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    support@shopease.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +92 300 1234567
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Pakistan
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2026 ShopEase. All rights reserved.</p>
+            <p>Designed & developed with HTML, CSS & JavaScript.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+
+            <button id="cartClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Your cart is empty</p>
+                <span>Add products to see them here.</span>
+            </div>
+
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong>$<span id="cartTotal">0.00</span></strong>
+            </div>
+
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+  
+
+
+<!-- WISHLIST SIDEBAR -->
+<div class="wishlist-overlay" id="wishlistOverlay"></div>
+
+<aside class="wishlist-sidebar" id="wishlistSidebar">
+
+    <div class="wishlist-header">
+        <h2>My Wishlist</h2>
+
+        <button id="wishlistClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div id="wishlistItems" class="wishlist-items">
+        <p class="empty-wishlist">Your wishlist is empty ❤️</p>
+    </div>
+
+</aside>
+  <!-- JavaScript -->
+   <script>
+    if (!sessionStorage.getItem("authToken")) {
+        window.location.href = "register.html";
+    }
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+    
