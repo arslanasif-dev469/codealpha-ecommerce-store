@@ -54,3 +54,10 @@ app.listen(PORT, "0.0.0.0", () => {
 }).on("error", (error) => {
     console.log("SERVER ERROR:", error);
 });
+process.on("uncaughtException", (error) => {
+    console.log("UNCAUGHT EXCEPTION:", error);
+});
+
+process.on("unhandledRejection", (error) => {
+    console.log("UNHANDLED REJECTION:", error);
+});
