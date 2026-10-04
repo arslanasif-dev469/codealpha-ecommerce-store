@@ -1,10 +1,12 @@
+require("dotenv").config();
+
 console.log("=== SHOP EASE SERVER STARTING ===");
 console.log("PORT:", process.env.PORT);
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
-require("dotenv").config();
 
 const app = express();
 
