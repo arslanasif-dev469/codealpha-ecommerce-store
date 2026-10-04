@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config({ path: __dirname + "/.env" });
 
 console.log("=== SHOP EASE SERVER STARTING ===");
 console.log("PORT:", process.env.PORT);
