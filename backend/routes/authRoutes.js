@@ -124,6 +124,7 @@ router.post("/login", async (req, res) => {
             });
 
         }
+console.log("JWT_SECRET EXISTS:", Boolean(process.env.JWT_SECRET));
 
         if (!process.env.JWT_SECRET) {
             throw new Error(
