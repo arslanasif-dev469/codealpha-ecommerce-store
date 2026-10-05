@@ -753,7 +753,7 @@ if (checkoutBtn) {
             // ================= SAVE ORDER =================
 
             const response = await fetch(
-                "http://localhost:5000/api/orders",
+              "https://dredger-wicked-fox.abasthan.app/api/orders",
                 {
                     method: "POST",
 
@@ -794,7 +794,7 @@ if (checkoutBtn) {
 
 
                 const stockResponse = await fetch(
-                    `http://localhost:5000/api/products/${item.productId}/stock`,
+                    "https://dredger-wicked-fox.abasthan.app/api/products/${item.productId}/stock",
                     {
                         method: "PUT",
 
@@ -923,7 +923,7 @@ async function loadProductsFromBackend() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/products"
+          "https://dredger-wicked-fox.abasthan.app/api/products"
         );
 
         if (!response.ok) {
