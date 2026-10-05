@@ -2,6 +2,7 @@ require("dotenv").config({ path: __dirname + "/.env" });
 
 console.log("=== SHOP EASE SERVER STARTING ===");
 console.log("JWT_SECRET EXISTS:", Boolean(process.env.JWT_SECRET));
+console.log("ENV KEYS:", Object.keys(process.env).filter(key => key.includes("JWT") || key.includes("MONGO")));
 console.log("PORT:", process.env.PORT);
 
 const express = require("express");
