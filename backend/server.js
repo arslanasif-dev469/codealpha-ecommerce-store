@@ -2,6 +2,7 @@ require("dotenv").config({ path: __dirname + "/.env" });
 const fs = require("fs");
 
 const secretFile = "/etc/secrets/jwt_secret.txt";
+console.log("SECRET FILE EXISTS:", fs.existsSync(secretFile));
 
 if (fs.existsSync(secretFile)) {
     process.env.JWT_SECRET = fs.readFileSync(secretFile, "utf8").trim();
